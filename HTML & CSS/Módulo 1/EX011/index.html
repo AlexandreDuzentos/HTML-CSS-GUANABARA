@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mídias em HTML5</title>
+    </head>
+    <body>
+        <h1>Imagens dinâmicas</h1>
+        <p>
+            Tente abrir esse site em vários dispositivos diferentes
+            ou simplesmente aumente ou diminua o tamanho do seu navegador
+        </p>
+         
+        <!--
+            A tag picture serve para definir vários tamanhos de imagens para serem renderizadas 
+            de acordo com o tamanho da tela
+        -->
+        <picture>
+            <!--Se a largura da tela for menor que 750 , a imagem pequena será carregada-->
+            <!--Se a a largura da tela for menor que 1000px, a imagem media será carregada -->
+            <!-- Se a largura da tela for maior que 1000px a imagem grande será carregada-->
+            <!--Deve-se colocar as as tags source na ordem correta, ou seja, do menor tamanho para o maior-->
+           <!--
+             A ordem em que as imagens ficam dispostos importa, por que é essa ordem que será
+             usada para o navegador tentar exibí-las 
+           -->
+            <source media="(max-width:750px)" srcset="./imagens/pequena.png" type="image/png">
+            <source media="(max-width:1050px)" srcset="./imagens/media.png" type="image/png">
+            <img src="./imagens/grande.png" alt="foto grande">
+        </picture>
+
+        <h1>Reproduzindo Aúdio</h1>
+        <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+        <!--
+             Essa é uma das formas de colocar aúdio no documento web.
+
+             É importante atentar a compatibilidade de determinados navegadores com certos formatos
+             de aúdio.
+             
+             O atributo controls serve para exibir o controlador do aúdio
+             O atributo autoplay serve para reproduzir o aúdio de forma automática
+        -->
+        <audio src="./audios/yes.mp3" controls autoplay >Reproduzir</audio>
+
+         
+        <!--
+            Essa variação da tag audio, permite definir vários formatos para um mesmo aúdio
+            uma vez que determinados navegadores podem ser incompatíveis com certos formatos
+            de aúdio 
+
+            A ordem em que os aúdios ficam dispostos importa, por que é essa ordem que será
+            usada para o navegador tentar reproduzí-lo
+        -->
+        <audio controls autoplay loop>
+            <source src="./audios/yes.mp3" type="audio/mpeg">
+            <source src="./audios/yes.wav" type="audio/wav">
+            <source src="./audios/yes.ogg" type="audio/ogg">
+            <p>Infelizmente seu navegador não consegue reproduzir aúdio.
+                <a href="./audios/yes.mp3" download="yes.mp3">Clique aqui para
+                 baixar o arquivo MP3</a>
+            </p>
+        </audio>
+    </body>
+</html>

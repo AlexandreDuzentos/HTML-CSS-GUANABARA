@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Outras formatações</title>
+    </head>
+    <body>
+        <h1>Outras formatações</h1>
+        <h2>Código-fonte / Pré-formatação</h2>
+        <!-- A tag code é usada para renderizar código fonte num documento html -->
+        <p>O comando <code>document.getElementById("Teste")</code> é escrito em linguagem JavaScript</p>
+
+ <pre> <!--A tag pre fará com que sejam considerados espaços, tabulações e quebra de linha-->
+   <code> <!--A tag code é semântica-->
+    num = int(input("Digite um número")) 
+    if num % 2 == 0:
+       print(f'o número {num} é PAR')
+    else:
+       print(f'o número {num} é ÍMPAR')
+    </code>
+ </pre>
+
+ <h2>Citações simples</h2>
+ <p>
+    <!--O q é uma tag que serve para fazer citações simples(semântica)-->
+    Como diria o pai de um amigo: <q> computador é um burro muito rápido</q> 
+</p>
+
+<h2>Citações longas</h2>
+<!--
+     o blockquote é uma tag que serve para fazer citações completas(longas) e é semântica
+     o parâmetro cite serve para colocar a referência da citação
+
+-->
+<p>Segundo verônica shoffstall:</p>
+<blockquote cite="https://www.pensador.com/frases_longas/">
+   Um dia você aprende que as verdadeiras amizades continuam a crescer, mesmo a longas distâncias.
+   E o que importa não é o que você tem na vida, mas quem tem na vida. Aprende que não temos que mudar
+   de amigos, se compreendermos que os amigos mudam.
+</blockquote>
+
+<h2>Abreviações: </h2>
+<!-- O abbr é uma tag semântica, que é usado em abreviações -->
+  <p>Estou trabalhando com <abrr title="Hypertext Markup Language">HTML</abrr>
+     e <abbr title="Cascanding Style Sheet">CSS</abbr>. Estou adorando!</p>
+    
+     <h2>Texto invertido</h2>
+        <p>
+            <!--
+                rtl: significa right to left
+                ltr: significa left to right
+            -->
+            <bdo dir="rtl">Alexandre</bdo> <!--A tag bdo com parâmetro rtl serve para inverter a escrita de um texto-->
+            <bdo dir="ltr">Alexandre</bdo>
+        </p>
+
+
+    </body>
+</html>

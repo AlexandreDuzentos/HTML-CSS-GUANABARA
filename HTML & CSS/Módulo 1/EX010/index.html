@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       <title>Trabalhando com links</title>
+    </head>
+    <body>
+        <h1>Usando links externos</h1>
+        <!--
+            O parâmetro target com o valor _blank informa para o navegador abrir uma nova aba na qual o
+            site correspondente a aquele link será aberto quando link for clicado.
+
+            O parâmetro rel é semântico
+
+            O parâmetro rel serve para informar para o navegador que o link é externo
+        -->
+        <p>Você pode acessar o meu <a  href="https://github.com/AlexandreDuzentos" target="_blank" rel="external">
+        repositório público no GitHub</a>
+        </p>
+
+        <p>
+            Você também pode acessar meu <a href="https://www.youtube.com/watch?v=1DRw4XRkqyA" target="_blank" rel="external">canal gratuito no youtube</a>
+        </p>
+
+        <h2>Usando links internos</h2>
+        <!--
+            Existem dois tipos de links internos
+            1: De uma parte do documento HTML5 para outra parte.
+            2: De um documento HTML5 para outro no mesmo servidor. 
+        -->
+        <p>
+            <!--O parâmetro rel com o valor next informa para o navegador que o link é interno para irs
+                outro documento html no mesmo servidor     
+            -->
+            Está é a primeira página do site, se você quiser pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a>
+        </p>
+
+        <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+
+        <h1>Links para download</h1>
+        <ul>
+            <!--O atributo download instrui ao navegador a baixar o recurso disponível na url ao invés de navegar para ela-->
+            <li><a href="livros/1- introducao-a-programacao.pdf" download="1- introducao-a-programacao.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+            <li><a href="livros/templated-binary.zip"  download="templated-binary.zip" type="application/zip">Baixar livro compactado em zip </a></li>
+        </ul>
+
+    </body>
+</html>

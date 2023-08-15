@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Listas</title>
+    </head>
+    <body>
+       <h1>Trabalhando com listas</h1>
+       <h2>Listas ordenadas</h2>
+       <!--
+          O Parâmetro type serve para definir o tipo de numeração da lista
+          valores possíveis: A,a,i,I, 1(DEFAULT)
+          A: numerar por letras maiúsculas do abecedário
+          a: numerar por letras minúsculas do abecedário
+          i: numerar por letras minúsculas romanas
+          I: numerar por letras maiúsculas romanas
+          1: numerar por números inteiros
+       -->
+
+       <!--
+        O Parâmetro start serve para definir o valor de início da numeração
+       -->
+         <ol type="I" start="3">
+            <!--A tag de fechamento para o li no HTML5 é opcional -->
+            <li>Acordar</li>
+            <li>Mexer no telefone</li>
+            <li>Levantar da cama</li>
+            <li>escovar os dentes</li>
+            <li>Tomar banho</li>
+         </ol>
+       <h2>Listas não ordenadas</h2>
+       <!--
+        O parâmetro type serve para definir o tipo de identificador do item
+        Os valores possíveis são: disc, circle, square
+       -->
+       <ul type="square">
+         <li>Pão</li>
+         <li>Leite</li>
+         <li>Tomáte</li>
+         <li>Manteiga</li>
+         <li>Arroz</li>
+         <li>Feijão</li>
+       </ul>
+
+       <h2>Minhas linguagens favoritas</h2>
+       <!-- Lista aninhada: é uma lista dentro da outra -->
+       <ol>
+          <li>Antigas</li>
+          <ol>
+            <li>Visual basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+          </ol>
+          <li>Novas</li>
+          <ol>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>c++</li>
+          </ol>
+       </ol>
+       
+       <h2>Lista de definições: </h2>
+       <dl>
+          <dt>Termo</dt>
+          <dd>Descrição</dd>
+
+          <dt>Programação:</dt>
+          <dd>É um conjunto de regras lógicas e semânticas para escrever um programa.</dd>
+
+          <dt>HTML:</dt>
+          <dd>É uma linguagem de marcação de hipertexto, responsável pelo conteúdo do documento HTML.</dd>
+
+          <dt>CSS:</dt>
+          <dd>É um linguagem de estilo, responsável pelo apresentação do documento HTML.</dd>
+
+          <dt>JavaScript:</dt>
+          <dd>
+             É uma linguagem de programação, multiparadigma de tipagem fraca, responsável pela interativadade
+             do documento HTML.
+          </dd>
+       </dl>
+
+    </body>
+</html>

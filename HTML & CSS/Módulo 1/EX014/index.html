@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Locais/Internos</title>
+    <!--
+        Os prós de usar css interno é que é menos trabalhoso e não polui o HTML.
+
+        Os contras estão na baixa flexibilidade de fazer reuso desse css para
+        outros documentos HTML e na falta de divisão de responsabilidades.
+
+        Use apenas estilos Internos, se eles forem pequenos.
+    -->
+    <style>
+        body{
+            background-color:lightsteelblue;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1{
+            color:darkblue;
+            background-color:lightblue;
+        }
+
+        h2{
+            color: darkred;
+        }
+
+        p{
+            text-align:justify;
+        }
+    </style>
+</head>
+ <body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eum tenetur,
+      delectus soluta ea quae temporibus voluptatum voluptatem magnam illo, quibusdam
+      minus deserunt qui maiores atque libero, sunt quisquam fugit!
+    </p> 
+
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam a sunt
+      quo ducimus officiis odio voluptates autem tenetur neque nisi, sit corrupti rem illo
+      nam qui, ipsa, eveniet minima.
+    </p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias officiis expedita,
+       est nisi, eligendi explicabo maxime beatae ipsum excepturi quo accusantium quidem
+       nemo numquam. Veniam temporibus accusamus consequuntur facere repudiandae.
+    </p>
+    
+</body>
+</html>
