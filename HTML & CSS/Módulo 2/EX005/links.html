@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+          SELETORES PERSONALIZADOS
+          # = id
+          . = classe
+          : = pseudo-classe
+          :: = pseudo-elemento
+        */
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color:red;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        a:visited {
+            color:darkred;
+        }
+        
+        /*
+         Quando a especificidade é a mesma, o que determina qual estilo será a aplicado é a ordem
+         de declaração dos mesmos, os estilos que estiverem mais abaixo serão mais específicos e
+         consequentemente os aplicados.
+         */
+        a:hover {
+            text-decoration:underline;
+            color:black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        /*
+          pseudo-elemento é uma palavra chave usada para estilizar partes específicas de um elemento.
+
+         Os principais pseudo-elementos usados nas CSS 
+         são ::before, ::after, ::first-letter, ::first-line.
+        */
+        a.especial::after{
+            content: ' ⇒';   
+        }
+
+        a.especial::before{
+            content:'⇒ ';
+        }
+
+        a.especial{
+            background-color:darkred;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

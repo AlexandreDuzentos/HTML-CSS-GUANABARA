@@ -1,0 +1,44 @@
+@charset "UTF-8";
+ /* A configuração acima faz com que o documento css seja compatível com caracteres acentuados */
+
+ /*
+  em HTML id = CSS #
+  em HTML class = .
+
+  Os estilos aplicados com id sobrepõem os estilos aplicados por classes e nome da tag.
+ */
+
+ body{
+    background-color: rgb(194, 255, 172);
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ h1{
+    color:  rgb(55, 158, 15);
+ }
+
+ h1#principal{
+    text-align:center;
+    background-color: green;
+    color:white;
+ }
+
+ h2{
+    color: rgb(23, 65, 6);
+ }
+
+ .basico{
+   color:#3c805e;
+ }
+
+ .intermediario{
+   color:#80793c;
+ }
+
+ .avancado{
+  color:#803c3c;
+ }
+
+ .destaque{
+   background-color: #c5c56070;
+ }

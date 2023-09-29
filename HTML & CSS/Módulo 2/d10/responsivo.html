@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color:grey;
+        }
+        
+        /*
+         Por padrão elementos do tipo box-level ocupam
+         100% do espaço disponível da tela.
+        */
+        main{
+            background-color:white;
+            padding:10px;
+            border-radius:10px;
+            
+            /*
+               Essa é a largura mínina e máxima que esse elemento ocupará independente da largura
+               da tela, o uso dessa propriedade ajuda a manter o página mais responsiva.
+            */
+            min-width:320px;
+
+            max-width: 800px;
+            margin:auto;
+        }
+
+        img{
+            width:100%;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit laudantium facilis
+         suscipit distinctio quod? Cumque exercitationem quae odio accusamus dolor dolore? Harum
+         mollitia sapiente similique quibusdam voluptatibus ratione quidem soluta.
+        </p>
+        <picture>
+            <source media="(max-width:800px)"  srcset="./imagens/irina-blok-pq.jpg">
+            <img src="./imagens/irina-blok.jpg" alt="Irina block">
+        </picture>  
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit laudantium facilis
+          suscipit distinctio quod? Cumque exercitationem quae odio accusamus dolor dolore? Harum
+          mollitia sapiente similique quibusdam voluptatibus ratione quidem soluta.
+        </p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        /*
+        Elementos da caixa de dentro para fora: conteúdo(tamanho(largura e altura)),
+        padding(tamanho(superior, direito, inferior, esquerdo)), border(largura, estilo, cor),
+        outline(largura, estilo, cor), margin(tamanho(superior, direito, inferior, esquerdo)), 
+        o outiline fica dentro da margin.
+        */
+        h1{
+            /* shorthand é uma maneira de se fazer mais escrevendo menos */
+             background-color:lightgray;
+             width:300px;
+             height:300px;
+
+            /*
+             border-width:10px;
+             border-style:solid;
+             border-color:darkslategray;
+            */
+
+             /* border shorthand */
+             border: 10px solid darkslategray;
+             
+             /*
+             padding-top: 10px;
+             padding-bottom: 10px;
+             padding-left: 10px;
+             padding-right: 10px;
+             */
+
+             /* padding shorthands */
+
+             /* padding: 10px 10px 10px 10px; */
+
+             /* Se os valores para o padding forem iguais para todas as partes, basta usar o shorthand
+              abaixo:
+             */
+              padding:10px;
+
+             /*
+              Também é possível usar dois valores para padding, sendo o primeiro aplicado na parte
+              superior e inferior do elemento e o segundo, na esquerda e direita.
+             */
+
+             /* padding: 10px 20px; */
+             
+             /*
+             margin-top:10px;
+             margin-left:10px;
+             margin-bottom: 10px;
+             margin-right:10px;
+             */
+
+             /* margin shorthands */
+
+             margin: 10px 10px 10px 10px;
+
+            /*
+              Se os valores para o padding forem iguais para todas as partes, basta usar o shorthand
+              abaixo:
+            */
+             margin: 10px;
+
+             /*
+              Também é possível usar dois valores para margin, sendo o primeiro aplicado na parte
+              superior e inferior do elemento e o segundo, na esquerda e direita.
+             */
+
+             /* margin: 10px 20px; */
+
+             /* Configurações usando o auto */
+
+             /* margin: 10px auto 10px auto; */ 
+             /* margin: 10px auto; */
+            
+             
+             /*
+             margin:auto; essa declaração centraliza o elemento.
+             */
+             
+             /*
+             outline-style:dashed;
+             outline-width:10px;
+             outline-color:coral;
+             */
+
+             /* shorthand para outline */
+             outline: 10px dashed coral;
+             
+        }
+        
+        /*
+         A propriedade display:inline numa tag que vem por padrão do browser  faz com que o width é o height não surtem efeito.
+        */
+        a{
+            border-width:10px;
+            border-style:solid;
+            border-color:red;
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+     Os estilos que vêm por padrão em determinados elementos HTML são
+     definidos pelo user agent, que nada mais é do que navegador na qual a página está aberta
+
+     Caixas do tipo box-level começam numa nova linha e ocupam 100% da tela
+     Caixas do tipo inline-level continuam na mesma linha do elemento adjacente a ele
+     e não ocupam 100% da tela
+    -->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exemplos 
+     de caixas inline-level </a>Vamos ver como tudo isso funciona!</p>
+    
+
+   
+</body>
+</html>

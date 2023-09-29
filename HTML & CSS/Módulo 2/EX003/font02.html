@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos</title>
+    <style>
+        body{
+            font: normal 16px  Arial,Verdana, serif;
+            /*
+            A propriedade text-align alinha o texto:
+             valores possíveis: right, left, start, end, justify;
+            */
+            text-align:left;
+        }
+
+        h1{
+            /* Esse text align irá subscrever o anterior colocado no seletor body */
+            text-align: left;
+        }
+
+        h2{
+          /* Esse text align irá subscrever o anterior colocado no seletor body */
+          text-align: right;
+        }
+
+        p{
+            /*
+             Esse text align irá subscrever o anterior colocado no seletor body
+
+             O valor justify alinha a esquerda e a direita.
+            */
+            text-align:justify;
+
+            /*A propriedade text-indent serve para definir o espaçozinho para abrir parágrafo no início de uma frase */
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de aninhamento</h1>
+    <h2>Subtítulo</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quis exercitationem,
+        provident esse ipsa, molestias eveniet deleniti praesentium voluptatem officiis et pariatur
+        reiciendis consequatur odio voluptatibus. Veritatis facere adipisci hic?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quas mollitia dolore,
+        impedit porro animi a aliquid quam dolorem eaque nesciunt pariatur ab libero, atque
+        reprehenderit deserunt officia? Unde, temporibus!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis in dolor placeat fugit
+        saepe sit at, corrupti amet facere minus pariatur aliquam voluptates dicta obcaecati illo
+        eius! Hic, iste voluptate.
+    </p>
+</body>
+</html>

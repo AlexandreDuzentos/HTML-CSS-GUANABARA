@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* O asterisco representa um seletor global, ou seja, ele seleciona toda e qualquer
+         elemento da minha página */
+        * {
+            height: 100%;
+        }
+
+        body{
+            /*
+              Valores possíveis para primeiro parâmetro da função linear-gradient
+              to right: gradiente aplicado da esquerda para a direita.
+              to left: gradiente aplicado da direita para a esquerda.
+              to top: gradiente aplicado de baixo para cima.
+              top bottom: gradiente aplicado da cima para baixa.
+              ângulo: 90deg, 45deg, 30deg
+            */
+            /* instagran degradê abaixo */
+             /* background-image: linear-gradient(to bottom, #996AB8 20%, #A049AD 10%, #D1879A 15%, #D81945 20%,#F8CA00 28%, #E38867 28%); */
+            /* background-image: radial-gradient(circle, #996AB8, #A049AD, #D1879A, #D81945,#F8CA00, #E38867); */
+            background-image: linear-gradient(to bottom, #996AB8, #A049AD, #D1879A, #D81945,#F8CA00, #E38867);
+
+            /*
+              A propriedade background-attachment faz com que uma imagem se mantenha fixa mesmo com o
+              rolar da página.
+            */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+     <h1>Testando gradiente</h1>
+
+</body>
+</html>

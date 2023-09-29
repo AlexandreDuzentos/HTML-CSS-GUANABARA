@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        body {
+            /*
+            Na declaração abaixo foi usada uma técnica chamada web safe fonts
+            que consiste em usar fontes que estão comumnente disponíveis
+            na maioria dos sistemas operacionais e dispositivos.
+
+             Nem toda família tipográfica possui todas as configurações de peso.
+
+             A propriedade font-family serve para definir a família tipográfica.
+
+             Determinadas famílias tipográficas não suportam todos os valores de algumas
+             propriedades.
+             */
+            font-family: "Arial, Helvetica, sans-serif";
+
+            /*
+              MEDIDAS TIPOGRÁFICAS:
+
+              Existem dois tipos de medida:
+
+              1- relativas(em, ex, rem, vw, vh, %)
+              o em é a medida que tem seu uso recomendado
+              pela w3c.
+
+              16px = 1em
+              o em é uma unidade relativa ao tamanho natural de um elemento
+
+              2- absolutas(cm, mm, in, px, pt, pc)
+              o px é a medida que tem seu uso recomendado
+              pela w3c.
+
+              o pt e pc não têm uso recomendado em textos
+              que serão renderizados em telas.
+            */
+            
+            /*
+             1in equivale a 2.5cm
+
+             A propriedade font-size serve para definir o tamanho da fonte.
+            */
+          font-size: 1em;
+          /*
+            Valores textuais para a propriedade abaixo: lighter, bold, bolder, normal.
+            Valores numéricos: 100, 200, 300, 400, 500, 600, 700, 800, 900.
+
+            A propriedade font-weight serve para definir o peso da fonte, ou seja sua grossura.
+           */
+          font-weight: lighter;
+          
+          /*
+           Valores possíveis: normal, italic, oblique
+           A propriedade font-style serve para definir o estilo da fonte
+          */
+          font-style: italic;
+          
+          /*
+           Valores possíveis: underline, overline, line-through
+           A propriedade text-decoration permite definir decorações de texto
+          */
+          text-decoration: overline;
+            
+        }
+
+        h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+
+        /*
+         shorthand font: é uma forma de agrupar vários valores de propriedades
+         distintas em um só propriedade
+
+         ordem: font-style -> font-weight -> font-size -> font-family
+        */
+        h1{
+            font: italic bold 3em "Times New Roman";
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Autem nemo nostrum itaque beatae error sunt ut quos velit,
+        quia voluptatum molestias hic odit natus ex delectus officiis
+        quaerat necessitatibus quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+        ipsum suscipit deserunt tenetur officiis voluptate alias eligendi
+        temporibus at sint natus quis ipsam nulla, ullam aspernatur quisquam
+        amet, enim doloribus?
+    </p>
+
+    <h2>Subtítulo do exércicio</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Officiis necessitatibus debitis quas illo, quis, iure, dolore
+        eius error ut similique quisquam. Ipsum accusantium, expedita
+        autem earum saepe ab obcaecati facere!
+    </p>
+</body>
+</html>
