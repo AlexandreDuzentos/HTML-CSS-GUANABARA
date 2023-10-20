@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de fundos</title>
+    <style>
+        body{
+          /*
+           Por padrão as imagens de fundo se repetem, para evitar esse comportamento, devemos
+           configurar a propriedade background-repeat com o valor no-repeat.
+
+           O ponto de partida da imagem de fundo é o canto superior esquerdo.
+          */
+          background-image: url("./imagens/pattern002.png");
+
+          /*
+            A propriedade background-size configura o tamanho da imagem de fundo.
+          */
+          background-size:100px 100px;
+
+          /*
+            A propriedade background-repeat permite definir se a imagem de fundo deve ou não
+            repetir-se.
+          */
+
+          /*
+            O valor repeat faz com que a imagem se repita na tela toda
+          */
+          background-repeat: repeat;
+
+          /*
+            O valor no-repeat faz com a imagem não se repita
+          */
+          background-repeat: no-repeat;
+          
+          /*
+            O valor repeat x faz com que a imagem se repita apenas no eixo x
+          */
+          background-repeat: repeat-x;
+
+          /*
+            O valor repeat y faz com que a imagem se repita apenas no eixo y
+          */
+          background-repeat: repeat-y;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de aplicação de fundo</h1>
+</body>
+</html>
