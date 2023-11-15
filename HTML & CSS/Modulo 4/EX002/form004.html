@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <!--
+       O atributo pattern recebe uma expressão regular, que é um método formal
+       para definir um padrão textual. 
+    -->
+    <form action="cadastro.php" method="get" autocomplete="on">
+     <!--
+       A tag fielset agrupa um conjunto de campos, delimitando-os por borda, 
+       ele é bastante usado para agrupar campos por assunto.
+    -->
+     <fieldset>
+        <!-- A tag legend serve para dar um título ao fieldset-->
+        <legend>Dados pessoais</legend>
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required pattern="">
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+        </p>
+    </fieldset>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>

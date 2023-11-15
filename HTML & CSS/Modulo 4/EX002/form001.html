@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--
+    O parâmetro autocomplete serve para indicar se elementos do tipo input
+    podem ter por padrão os seus valores completados automaticamente pelo browser,
+    ele recebe pode receber dois valores, on e off.
+
+    Usamos o método get para dados não sensíveis e o post para dados
+    sensíveis.
+    -->
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <!-- 
+            A tag label funciona como uma etiqueta para um determinado elemento input,
+            ela associa um input a um texto, o parâmetro for recebe o id do elemento 
+            input a qual ela estará associada.
+        -->
+        <p><label for="iNome">Nome:</label><input type="text" name="nome" id="iNome"> </p>
+
+        <p><label for="iSobrenome">Sobrenome:</label><input type="text" name="sobrenome"
+            id="iSobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

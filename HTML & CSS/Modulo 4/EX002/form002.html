@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <!--
+         O parâmetro required serve para obrigar o usuário a preencher o campo do formulário.
+
+         Os parâmetros minlength e maxlength servem para definir uma quantida mínima e máxima de
+         caracteres permitidos dentro de um campo de formulário.
+
+         O parâmetro size serve para definir quantos caracteres serão exibidos no campo
+         do formulário.
+
+         O parâmetro placeholder permite definir uma dica do que o usuário deve colocar no
+         formulário.
+    -->
+    <form action="cadastro.php" method="post">
+       <p>
+          <label for="iusu">Usuário: </label> 
+          <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="8"
+          placeholder="nome do usuário">
+       </p>
+       <p>
+          <label for="isen">Senha: </label>
+          <input type="password" name="sen" id="isen" required minlength="8">
+       </p>
+       <p>
+         <input type="submit" value="enviar">
+         <input type="reset" value="limpar">
+       </p>
+    </form>
+</body>
+</html>

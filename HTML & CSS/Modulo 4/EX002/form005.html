@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <!--
+         O atributo checked serve para fazer com que o input venha selecionado por padrão.
+     -->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="M">
+            <label for="imas">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="ifem" value="F" checked>
+            <label for="ifem">Masculino</label> <br>
+        </fieldset>
+       <fieldset>
+         <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas" checked>
+            <label for="iesbas">basquete</label> <br>
+
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futebol</label> <br>
+
+            <input type="checkbox" name="esnat" id="iesnat" checked> 
+            <label for="iesnat"></label>Natação <br>
+
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label> <br>          
+       </fieldset>
+
+       <p>
+         <input type="submit" value="enviar">
+         <input type="reset" value="limpar">
+       </p>
+    </form>
+</body>
+</html>

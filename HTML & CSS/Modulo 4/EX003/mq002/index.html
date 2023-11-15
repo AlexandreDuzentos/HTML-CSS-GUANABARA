@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media features</title>
+
+    <!--
+        O valor all no parâmetro media indica que o css em questão será aplicado 
+        a todos os dispositivos.
+
+        Definindo media types para todos os dispositivos.
+    -->
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+
+    <!--
+         Definindo media type e media feature para tela com orientação retrato.
+         A media type é screen e a media feature é (orientation: portrait)
+    -->
+    <link rel="stylesheet" href="estilo/portrait.css" media="screen and (orientation: portrait)">
+
+     <!--
+         Definindo media type e media feature para tela com orientação paisagem.
+         A media type é screen e a media featura é (orientation: landscape)
+    -->
+    <link rel="stylesheet" href="estilo/landscape.css" media="screen and (orientation: landscape)">
+</head>
+<body>
+    <!--
+       O aparelho está no modo portrait(retrato) quando ele está em pé.
+       O aparelho está no modo landscape(paisagem) quando ele está deitado.
+    -->
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>

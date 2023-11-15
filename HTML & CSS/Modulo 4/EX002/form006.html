@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- 
+      Por padrão o range vai de 0 a 100, mas é possível alterar isso
+      usando os parâmetros min e max.
+      
+      Quando usamos um input do tipo file, o method de envio de formulário não
+      pode ser get, mas sim, post, isto por que o método get tem uma limitação
+      de envio de 3000 mil bytes o mesmo ocorre com o textarea.
+    -->
+    <h1>Exemplos de formulários</h1>
+    <form action="" method="POST" autocomplete="on">
+       <p>
+         <label for="icor">Cor: </label>
+         <input type="color" name="cor" id="icor" value="#00ff00">
+       </p>
+       <p>
+         <label for="inivel">Nível de satisfação</label>
+         <input type="range" name="nivel" id="inivel" min="1" max="10" value="8">
+       </p>
+       <p>
+         <label for="ifoto">Foto de perfil</label>
+         <input type="file" name="foto" id="ifoto">
+      </p>
+       <p>
+         <input type="submit" value="enviar">
+         <input type="reset" value="limpar">
+       </p>
+    </form>
+</body>
+</html>

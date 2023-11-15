@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*
+   Paleta de cores
+   Verde: #49a09d
+   Lilás: #5f2c82
+*/
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body, html{
+    width:100vw;
+    height:100vh;
+    background-color:#5f2c82;
+}
+
+main{
+    /* position:relative; */
+    height:100vh;
+    width:100vw;
+}
+
+section#login{
+    background-color:white;
+    width:250px;
+    height: 500px;
+    border-radius:20px;
+    position:relative;
+    top:50%;
+    left:50%;
+    overflow:hidden;
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.355);
+    display:block;
+
+    /* Transição de meio-segundo na hora de mudar o width */
+    transition: width 0.2s, height 0.2s;
+
+    /* Sempre colocar transformações como últimas declarações no seletor*/
+    transform:translate(-50%, -50%);
+}
+
+section#login > div#imagem{
+    background-color:#5f2c82;
+    background-image:url(../imagens/building.jpg);
+    height: 200px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+section#login > div#formulario{
+    display:block;
+    padding:8px;
+}
+
+div#formulario > h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+div#formulario > p{
+    font-size:0.8em;
+}
+
+form > input[type=submit]{
+    display:block;
+    font-size:1em;
+    width:100%;
+    height:40px;
+    margin-bottom:5px;
+    background-color: #49a049;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+ form > div.campo{
+    background-color:#5f2c82;
+    border:2px solid #5f2c82;
+    height:40px;
+    border-radius:8px;
+    margin:5px 0;
+ }
+
+ div.campo > label{
+    display:none;
+ }
+
+form > input[type=submit]:hover{
+    background-color:#179517;
+}
+
+form > a.botao{
+   display:block;
+   text-align:center;
+   font-size:1em;
+   width:100%;
+   height:40px;
+   padding-top:5px;
+   background-color: #50f550;
+   color:white;
+   text-decoration:none;
+   border-radius:5px;
+}
+
+form > a.botao:hover{
+    background-color:#8ff78f;
+}
+
+form > div.campo > span{
+  font-size:2em;
+  color:white;
+  width:40px;
+  padding:5px;
+}
+
+
+div.campo > input{
+    background-color: #6fbc6f;
+    font-size:1em;
+    /* Calculando a largura do input baseado no espaço total disponível no elemento pai */
+    width:calc(100% - 45px);
+
+    /* Movimentando o elemento no eixo y para para cima */
+    transform:translateY(-12px);
+    height:100%;
+    border:0px;
+    border-radius:8px;
+}
+
+div.campo > input:focus{
+    background-color:white;
+}
